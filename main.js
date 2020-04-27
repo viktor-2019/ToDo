@@ -1,28 +1,19 @@
 let data = [
-    'Awake',
-    'To do my homework',
-    'To watch Yourtube',
-    'To learn JS',
+    'To learn HTML',
+    'To learn CSS',
+    'To learn JS and nodecle',
+    'To learn React',
   ];
 
-  handlerTriggerButton = event => {
-    let offOn = event.currentTarget.querySelector('.button');
-    offOn.hidden = !offOn.hidden;
-  }
+handlerTriggerButton = event => {
+  let offOn = event.currentTarget.querySelector('.button');
+  offOn.hidden = !offOn.hidden;
+}
 
 handleDeletePanel = event => {
   let target = event.target;
   let del = target.closest('.panel').innerText;
-  let deleted = del.replace('[X]\n', '');
-  // let deletedItem = deleted.slice(3);
   let deletedItem = del.slice(6).trim();
-  console.log(del + ' ' + deletedItem);
-  //  It seems to me I will do this "if" as idiot :(
-  //  It works either in "Chrom" or in "Safari"
-  // if (navigator.userAgent.includes('Safari') &&
-  //     !navigator.userAgent.includes('Mobile')) {
-  //   deletedItem = del.slice(6);
-  // };
   data = data.filter(el => el !== deletedItem);
   target.closest('.panel').hidden = true;
   list.innerHTML = '';

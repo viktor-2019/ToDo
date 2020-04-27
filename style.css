@@ -1,5 +1,6 @@
 h2 {
   text-align: center;
+  font: 700 24px Verdana, Aryal, sans-serif;
 }
 .container {
   
@@ -7,7 +8,7 @@ h2 {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   max-width: 960px;
   margin: 10px auto;
 }
@@ -21,7 +22,6 @@ h2 {
 .panel {
   margin: 15px auto;
   padding: 5px;
-  
   position: relative;
   background-color: #ddd;
   border: 1px solid #999;
@@ -36,7 +36,7 @@ h2 {
 }
 
 .button {
-  color: #ff0000;
+  color: #c02;
   font-size: 1.5rem;
   position: absolute;
   top: 5px;
@@ -44,6 +44,8 @@ h2 {
   
 }
 .addItems {
+
+  justify-content: space-around;
   width: 33%;
   padding: 15px;
   background-color: beige;
@@ -51,17 +53,21 @@ h2 {
   min-height: 200px;
 }
 #task {
-  margin: 10px auto;
-  width: 100%;
+  margin: 5px auto;
+  padding-left: 10px;
+  color: #222;
+  width: 90%;
   min-height: 30px;
-  font: 600 1em Arial, Helvetica, sans-serif;
+  font: 400 .9em Verdana, Arial, Helvetica, sans-serif;
 }
 .btnAdd {
+  justify-content: center;
+  margin: 30px;
   width: 60%;
-  margin: 20px auto;
-  font: 800 2rem Arial, sans-serif;
+  font: 800 2rem Verdana, Arial, sans-serif;
   border: 2px solid lightgrey;
   border-radius: 5px;
-  box-sizing: 3px 3px 3px #555;
+  box-shadow: 3px 3px 3px #555;
   background-color: lightgray;
 }
+
