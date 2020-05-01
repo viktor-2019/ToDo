@@ -1,7 +1,7 @@
 let data = [
     'To learn HTML',
     'To learn CSS',
-    'To learn JS and nodecle',
+    'To learn JS and nodejs',
     'To learn React',
   ];
 
